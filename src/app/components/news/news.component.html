@@ -1,0 +1,25 @@
+<div class="pageFill" id="newsCover">
+    <h1 id="newsTitle">News and opinions</h1>
+    <div id="latestNews">
+        <h1>Latest News</h1>
+        <div>
+            <h1>Article Title</h1>
+        </div>
+    </div>
+</div>
+<div id="latestContainer">
+        <div id="titlesLatestNews">
+           <a href="">Post Title</a>
+           <a href="">Post Title</a>
+           <a href="">Post Title</a>
+       </div>
+</div>
+<div class="pageFill" id="blogTitles">
+    <article *ngFor="let post of postArray">
+        <img src="../../../assets/Images/blogpost1.jpg" alt="">
+        <h1>{{post.title}}</h1>
+        <h2>{{post.date}}</h2>
+        <h3>{{post.intro}}</h3>
+        <button>Lees meer</button>
+    </article>
+</div>

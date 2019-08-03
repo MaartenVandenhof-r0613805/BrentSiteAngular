@@ -1,1 +1,693 @@
-/* You can add global styles to this file, and also import other style files */
+/*Reset.css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Actual css*/
+
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body {
+    height: 100%;
+}
+
+nav {
+    height: 8%;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 8px 2px rgba(46, 46, 46, 0.58);
+}
+
+nav a {
+    margin: 0px 50px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    color: #0F1568;
+    font-weight: bold;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #0F1568;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+
+.pageFill {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+#frontImage {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#frontImage img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -20px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+#frontImage h1 {
+    position: absolute;
+    font-size: 8vw;
+    font-weight: bold;
+    color: #00FFC6;
+    width: 50%;
+    text-align: right;
+    z-index: 1;
+    top: 40%;
+    left: 3%;
+}
+
+#secondTile {
+    background-color: #0F1568;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#secondTile h1{
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: #00FFC6;
+}
+
+#secondTile article {
+    color: #00FFC6;
+    margin: 5% 10% 0% 10%;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+#contentTable {
+    width: 25%;
+    height: 30vh;
+    max-width: 400px;
+    background-color: #0F1568;
+    padding: 15px;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+#contentTable h1{
+    font-size: 2.5vw;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+}
+
+#contentTable div{
+    font-size: 1.5vw;
+    font-weight: bold;
+    width: 50%;
+    height: 90%;
+    color: #FFF;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentTable div h2 {
+    margin-top: 10%;
+}
+
+#contentTable div a{
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 10%
+}
+
+#articles {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#articles article {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+    width: 95%;
+    border: 1px solid #0F1568;
+}
+
+#articles article h1{
+    width: 100%;
+    font-size: 3vw;
+    font-weight: bold;
+    background: #0F1568;
+    color: #00FFC6;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#articles article h3{
+    width: 100%;
+    padding: 1%;
+    background: #0F1568;
+    color: #FFF;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.articleText {
+    margin: 3%;
+}
+
+#newsTitle {
+    font-size: 5vw;
+    font-weight: bold;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00FFC6
+}
+
+#newsBody {
+}
+
+#newsCover {
+    background: #0F1568;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsStories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+
+#latestNews {
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2vw;
+}
+
+#latestNews h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    background: #00FFC6;
+    color: #0F1568;
+    font-weight: bold;
+}
+
+#latestNews div {
+    width: 100%;
+    display: flex;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/Images/blurry_placeholder.jpg);
+    background-size: cover;
+}
+
+
+#latestNews div h1 {
+    width: 90%;
+    height: 90%;
+    color: #0F1568;
+    font-size: 3vw;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+}
+#frontImageAbout {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#frontImageAbout img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    object-fit: cover;
+}
+
+#frontImageAbout h1 {
+    position: absolute;
+    font-size: 8vw;
+    font-weight: bold;
+    color: #0F1568;
+    width: 35%;
+    z-index: 1;
+    top: 40%;
+    left: 3%;
+    text-align: left
+}
+
+#secondTileAbout {
+    background-color: #0F1568;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#secondTileAbout .articleAbout {
+    height: 35vh;
+}
+
+#thirdTileAbout {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articleAbout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #00FFC6;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.articleAbout p {
+    color: #FFF;
+    font-size: 1.5vw;
+    margin: 2vh 0vh;
+    font-weight: bold;
+}
+
+.articleAbout div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 2vw;
+    height: auto;
+}
+
+#paragraph div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 2vw;
+}
+
+#paragraph {
+    margin: 0px;
+    height: auto;
+}
+
+.articleAbout div h1 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.articleAbout img {
+    width: 30%;
+    height: 100%;;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+
+
+#thirdTileAbout .articleAbout p {
+    color: #0F1568;
+    font-size: 1.5vw;
+    margin: 2vh 0vh;
+}
+
+#thirdTileAbout .articleAbout div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 2vw;
+}
+
+#thirdTileAbout #paragraph div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 2vw;
+}
+
+#thirdTileAbout #paragraph {
+    margin: 0px;
+    height: auto;
+}
+
+#thirdTileAbout .articleAbout div h1 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.contactInfo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contactInfo div {
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contactDetail {
+    width: 100px;
+    height: 100px;
+    margin: 5%;
+}
+
+
+
+.contactInfo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    font-size: 4vw;
+    font-weight: bold;
+    color: #00FFC6;
+    width: 100%;
+}
+
+#facebook {
+    background-image: url(./assets/Images/facebookWhite.png);
+    background-position: center;
+    background-size: cover
+}
+
+
+
+#twitter {
+    background-image: url(./assets/Images/twitterWhite.png);
+    background-size: cover;
+}
+
+#linkedIn {
+    background-image: url(./assets/Images/linkedinWhite.png);
+    background-size: cover;
+}
+
+#email {
+    background-image: url(./assets/Images/emailWhite.png);
+    background-size: cover;
+}
+
+#fourthTileAbout {
+        background-color: #0F1568;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fifthTileAbout {
+    background-color: #00FFC6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #0F1568;
+}
+
+#fifthTileAbout h1 {
+    color: #FFF
+}
+
+#fifthTileAbout p {
+    color: #0F1568;
+    font-weight: bold;
+}
+
+#sixthTileAbout {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#sixthTileAbout .articleAbout {
+    height: 45vh;
+}
+
+#sixthTileAbout p {
+    color: #0F1568;
+}
+
+#blogTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vh;
+}
+
+#blogTitles article {
+    width: 80%;
+    margin: 2vh 0vh;
+    box-shadow:  3px 3px 5px 3px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#blogTitles img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+#blogTitles h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #0F1568;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: #0F1568;
+}
+
+#blogTitles h2 {
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    color: #00FFC6;
+}
+
+#blogTitles h3 {
+    margin: 2vh 2vw;
+    color: #0F1568;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+#blogTitles button {
+    margin-bottom: 2vh;
+    border: 1px solid #00FFC6;
+    padding: 0.3vw 1vw;
+    background: #00FFC6;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #FFF;      
+}
+
+#blogTitles button:hover {
+    transition: 0.3s;
+    color: #00FFC6;
+    background: #FFF;
+}
+
+#titlesLatestNews {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: #0F1568;
+    margin-bottom: 5vh;
+}
+
+#titlesLatestNews a {
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testFrom{
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#testFrom label{
+    font-weight: bold;
+    color: #0F1568
+}
+
+#testFrom input{
+    margin-bottom: 2vh;
+}
+
+#testFrom input[type=submit]{
+    color: #FFF;
+    font-weight: bold;
+    height: 6vh;
+    background: #0F1568;
+    border: 1px solid #0F1568;
+}
+
+#formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formDiv h1 {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    background: #0F1568;
+    min-width: 200px;
+}
+
+#formDiv h2 {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    background: #59c714;
+    font-size: 2vw;
+}
+
+#formDiv div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow:  3px 3px 5px 3px #ccc;
+    min-width: 250px;
+}
+
+.error {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    border: 2px solid red;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+}
+
+#latestContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 5vh;
+}
