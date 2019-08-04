@@ -32,7 +32,19 @@ export class NewsService {
     this.postList.push({
       title: post.title,
       intro: post.intro,
-      date: post.date
+      date: post.date,
+      url: "https://firebasestorage.googleapis.com/v0/b/brentsite-ebcd7.appspot.com/o/uploads%2Fblogpost1.jpg?alt=media&token=736fcc7e-5514-472a-8a43-df7e19ed74d4"
+    })
+  }
+
+  insertPostImage(post, url:string){
+    console.log('in Image Post method')
+    console.log("Met url: " + url)
+    this.postList.push({
+      title: post.title,
+      intro: post.intro,
+      date: post.date,
+      url: url
     })
   }
 }
