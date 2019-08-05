@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { environment } from "../environments/environment";
 import { NewsService } from "./services/news.service";
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { BlogpostComponent } from './components/blogpost/blogpost.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    AddPostComponent
+    AddPostComponent,
+    BlogpostComponent
   ],
   imports: [
     BrowserModule,
