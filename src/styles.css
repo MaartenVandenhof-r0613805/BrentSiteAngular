@@ -273,6 +273,7 @@ nav a:hover {
     background: #00FFC6;
     color: #0F1568;
     font-weight: bold;
+    z-index: 3;
 }
 
 #latestNews div {
@@ -281,8 +282,7 @@ nav a:hover {
     height: 85%;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/Images/blurry_placeholder.jpg);
-    background-size: cover;
+    position: relative;
 }
 
 
@@ -296,6 +296,14 @@ nav a:hover {
     flex-wrap: wrap;
     background: rgba(255, 255, 255, 0);
 }
+
+#latestNews img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+}
+
 #frontImageAbout {
     display: flex;
     justify-content: flex-start;
