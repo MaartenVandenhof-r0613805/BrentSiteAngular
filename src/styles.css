@@ -273,6 +273,7 @@ nav a:hover {
     background: #00FFC6;
     color: #0F1568;
     font-weight: bold;
+    z-index: 3;
 }
 
 #latestNews img {
@@ -303,6 +304,14 @@ nav a:hover {
     margin-left: 1vw;
     z-index: 3;
 }
+
+#latestNews img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+}
+
 #frontImageAbout {
     display: flex;
     justify-content: flex-start;

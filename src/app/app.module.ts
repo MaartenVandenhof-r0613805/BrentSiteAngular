@@ -16,6 +16,7 @@ import { NewsService } from "./services/news.service";
 import { AddPostComponent } from './components/add-post/add-post.component';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { LoginComponent } from './components/login/login.component';
+import { BlogpostComponent } from './components/blogpost/blogpost.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +25,7 @@ import { LoginComponent } from './components/login/login.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    AddPostComponent,
-    LoginComponent
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
