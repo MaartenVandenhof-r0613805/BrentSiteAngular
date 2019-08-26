@@ -14,6 +14,8 @@ import { AboutComponent } from './components/about/about.component';
 import { environment } from "../environments/environment";
 import { NewsService } from "./services/news.service";
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    AddPostComponent
+    AddPostComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [NewsService],
   bootstrap: [AppComponent]

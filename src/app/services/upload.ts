@@ -3,6 +3,7 @@ export class Upload {
     file:File;
     name:string;
     url:string;
+    pdf:string;
     progress:number;
     createdAt: Date = new Date();
   

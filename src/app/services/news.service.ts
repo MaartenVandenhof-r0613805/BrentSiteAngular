@@ -27,24 +27,26 @@ export class NewsService {
     return posts;
   }
 
-  insertPost(post){
+  insertPost(post, pdf: string){
     console.log('in Post method')
     this.postList.push({
       title: post.title,
       intro: post.intro,
       date: post.date,
-      url: "https://firebasestorage.googleapis.com/v0/b/brentsite-ebcd7.appspot.com/o/uploads%2Fblogpost1.jpg?alt=media&token=736fcc7e-5514-472a-8a43-df7e19ed74d4"
+      url: "https://firebasestorage.googleapis.com/v0/b/brentsite-ebcd7.appspot.com/o/uploads%2Fblogpost1.jpg?alt=media&token=736fcc7e-5514-472a-8a43-df7e19ed74d4",
+      pdf: pdf
     })
   }
 
-  insertPostImage(post, url:string){
+  insertPostImage(post, url:string, pdf: string){
     console.log('in Image Post method')
     console.log("Met url: " + url)
     this.postList.push({
       title: post.title,
       intro: post.intro,
       date: post.date,
-      url: url
+      url: url,
+      pdf: pdf
     })
   }
 }

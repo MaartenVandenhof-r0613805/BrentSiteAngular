@@ -1,0 +1,13 @@
+<div class="pageFill" id="loginContainer">
+    <div id="loginScreen">
+        <h1>Fill in your details</h1>
+        <form [formGroup]="loginForm">
+                <label for="title">Username*</label>
+                <input type="text" id="username" placeholder="Username" class="form-control" formControlName="username" /> 
+                <label for="description">Password*</label>
+                <input id="password" type="password" placeholder="Password" class="form-control" formControlName="password" /> 
+                <button class="btn btn-primary" (click)="signIn()"> Log in </button>
+                <button class="btn btn-success" (click)="createUser()"> Create Account </button>
+        </form>
+    </div>
+</div>

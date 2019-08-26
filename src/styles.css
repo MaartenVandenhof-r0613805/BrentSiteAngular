@@ -275,26 +275,33 @@ nav a:hover {
     font-weight: bold;
 }
 
+#latestNews img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+}
+
 #latestNews div {
     width: 100%;
     display: flex;
     height: 85%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-image: url(./assets/Images/blurry_placeholder.jpg);
-    background-size: cover;
+    position: relative;
 }
 
 
 #latestNews div h1 {
-    width: 90%;
-    height: 90%;
     color: #0F1568;
     font-size: 3vw;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.63);
+    width: auto;
+    padding: 0.5vw;
+    margin-left: 1vw;
+    z-index: 3;
 }
 #frontImageAbout {
     display: flex;
@@ -588,6 +595,21 @@ nav a:hover {
     color: #FFF;      
 }
 
+#blogTitles a {
+    margin-bottom: 2vh;
+    border: 1px solid #00FFC6;
+    padding: 0.3vw 1vw;
+    background: #00FFC6;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #FFF;   
+    text-decoration: none;   
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #blogTitles button:hover {
     transition: 0.3s;
     color: #00FFC6;
@@ -697,4 +719,62 @@ nav a:hover {
     align-items: center;
     height: 10vh;
     margin-top: 5vh;
+}
+
+#loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginScreen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    box-shadow:  3px 3px 5px 3px #ccc;
+    min-width: 300px;
+    width: 50%;
+}
+
+#loginScreen h1 {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    background: #0F1568;
+    
+}
+
+#loginScreen form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 20vw;
+    width: 80%;
+    font-size: 2vw;
+}
+#loginScreen input {
+    width: 40%;
+    height: 3vh;
+}
+
+#loginScreen label {
+    width: 40%
+}
+
+#loginScreen button {
+    color: #FFF;
+    font-weight: bold;
+    height: 6vh;
+    background: #0F1568;
+    border: 1px solid #0F1568;
+    padding: 0vw 5vw;
+    font-size: 1.5vw;
 }

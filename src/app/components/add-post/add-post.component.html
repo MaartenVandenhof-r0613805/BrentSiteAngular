@@ -14,7 +14,10 @@
                     <input type="date" name="date" formControlName="date">
                     <p class="error" *ngIf="errorDate">Date not filled in</p>
                     <label for="image">Image</label>
-                    <input type="file" name="image" (change)="detectFiles($event)">
+                    <input type="file" name="image" (change)="detectImage($event)">
+                    <label for="pdf">PDF File</label>
+                    <input type="file" name="pfd" (change)="detectPDF($event)">
+                    <p class="error" *ngIf="errorPdf">Select pdf</p>
                     <input type="submit" value="Submit"> </form>
                     <h2 *ngIf="submittedSucces">Added Succesfully</h2>
                 </div>

@@ -4,6 +4,7 @@
         <h1>Latest News</h1>
         <div>
             <h1>{{ postArray[postArray.length - 1].title }}</h1>
+            <img src="{{postArray[postArray.length - 1].url}}" alt="">
         </div>
     </div>
 </div>
@@ -20,6 +21,6 @@
         <h1>{{post.title}}</h1>
         <h2>{{post.date}}</h2>
         <h3>{{post.intro}}</h3>
-        <button>Lees meer</button>
+        <a href="{{post.pdf}}">Lees meer</a>
     </article>
 </div>
