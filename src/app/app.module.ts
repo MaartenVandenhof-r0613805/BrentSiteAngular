@@ -25,7 +25,8 @@ import { BlogpostComponent } from './components/blogpost/blogpost.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    AddPostComponent
+    AddPostComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
