@@ -17,6 +17,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { LoginComponent } from './components/login/login.component';
 import { BlogpostComponent } from './components/blogpost/blogpost.component';
+import { AuthService } from "./services/auth.service";
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { BlogpostComponent } from './components/blogpost/blogpost.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [NewsService],
+  providers: [NewsService, AuthService, AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
