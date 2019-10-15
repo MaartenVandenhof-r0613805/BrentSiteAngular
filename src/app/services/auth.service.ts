@@ -12,10 +12,28 @@ import { switchMap } from "rxjs/operators";
   providedIn: 'root'
 })
 export class AuthService {
-  users$: Observable<any>;
+  withMail: boolean;
+  error: string;
+  private user: Observable<firebase.User>;
+  private userDetails: firebase.User = null;
+  public loggedIn: boolean;
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) { 
-    this.users$ = this.afAuth.authState;
+    this.withMail = true;
+    this.user = afAuth.authState;
+    this.loggedIn = !!sessionStorage.getItem('user');
+
+    this.user.subscribe(
+        (user) => {
+          if (user) {
+            this.userDetails = user;
+
+            console.log(this.userDetails);
+          } else {
+            this.userDetails = null;
+          }
+        }
+      );
   }
 
   async googleSignin(){
@@ -25,9 +43,19 @@ export class AuthService {
     return this.updateUserData(credential.user);
   }
 
-  async mailSignin(email: string, password: string){
+  async mailSignin(email:string, password:string){
+    console.log(email);
+    
     const provider = new auth.EmailAuthProvider();
-    const credential = await this.afAuth.auth.signInWithEmailAndPassword(email, password);
+    
+      
+      this.afAuth.auth.signInWithEmailAndPassword(email, password).catch(function (error) {
+        console.log("testtesttest");
+        console.log(error);
+        this.withMail = false;
+      });
+
+      if (this.withMail) return this.router.navigate(['/home']);
   }
 
   async signOut() {

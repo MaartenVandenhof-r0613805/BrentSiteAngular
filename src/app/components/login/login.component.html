@@ -7,8 +7,14 @@
             <button (click)="auth.signOut()">Sign Out</button>
         </div>
 
-        <button (click)="auth.googleSignin()">Sign in with google</button>
-        <button (click)="auth.mailSignin()">Sign in with mail</button>
+        <label for="title">Email*</label>
+        <input type="text" #username placeholder="Username"/> 
+        <label for="description">Password*</label>
+        <input #password type="password" placeholder="Password"/> 
+        <!-- <button (click)="auth.googleSignin()">Sign in with google</button> -->
+        <button (click)="auth.mailSignin(username.value, password.value)">Sign in with mail</button>
+        <button (click)="auth.signOut()">log out</button>
+        <div *ngIf="!auth.withMail">{{auth.error}}</div>
 
         <!-- <form [formGroup]="loginForm">
                 <label for="title">Username*</label>
