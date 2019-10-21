@@ -26,7 +26,6 @@ export class AddPostComponent implements OnInit {
   pdfSelected: boolean;
 
   ngOnInit() {
-    console.log("ON INIT")
     this.newsService.getPosts();
     this.submittedSucces = false;
     this.errorDate = false;

@@ -1,4 +1,4 @@
-<div class="pageFill" id="newsCover">
+<!-- <div class="pageFill" id="newsCover">
     <h1 id="newsTitle">News and opinions</h1>
     <div id="latestNews">
         <h1>Latest News</h1>
@@ -7,12 +7,12 @@
             <img src="{{ postArray[postArray.length - 1].url }}" alt="">
         </div>
     </div>
-</div>
+</div> -->
 <div id="latestContainer">
         <div id="titlesLatestNews">
-           <a href="">{{ postArray[postArray.length - 1].title }}</a>
-           <a href="">{{ postArray[postArray.length - 2].title }}</a>
-           <a href="">{{ postArray[postArray.length - 3].title }}</a>
+           <a href="{{ postArray[postArray.length - 1].pdf }}">{{ postArray[postArray.length - 1].title }}</a>
+           <a href="{{ postArray[postArray.length - 2].pdf }}">{{ postArray[postArray.length - 2].title }}</a>
+           <a href="{{ postArray[postArray.length - 3].pdf }}">{{ postArray[postArray.length - 3].title }}</a>
        </div>
 </div>
 <div class="pageFill" id="blogTitles">

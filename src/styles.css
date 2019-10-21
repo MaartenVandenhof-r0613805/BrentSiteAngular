@@ -46,6 +46,11 @@ table {
 
 /*Actual css*/
 
+@font-face {
+    font-family: "KeepCalm";
+    src: url("./assets/fonts/KeepCalm-Medium.ttf") format("truetype")
+  }
+
 html {
     height: 100%;
     font-family: 'Montserrat', sans-serif; 
@@ -53,6 +58,10 @@ html {
 
 body {
     height: 100%;
+}
+
+h1 {
+    font-family: 'KeepCalm';
 }
 
 nav {
@@ -119,9 +128,10 @@ nav a:hover {
     position: absolute;
     font-size: 8vw;
     font-weight: bold;
+    font-family: "KeepCalm";
     color: #00FFC6;
     width: 50%;
-    text-align: right;
+    text-align: left;
     z-index: 1;
     top: 40%;
     left: 3%;
@@ -331,10 +341,11 @@ nav a:hover {
 }
 
 #frontImageAbout h1 {
+    font-family: 'KeepCalm';
     position: absolute;
     font-size: 8vw;
     font-weight: bold;
-    color: #0F1568;
+    color: #FFF;
     width: 35%;
     z-index: 1;
     top: 40%;
@@ -444,65 +455,98 @@ nav a:hover {
 
 .contactInfo {
     width: 100%;
-    height: 50%;
+    height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column
 }
 
 .contactInfo div {
-    width: 100%;
-    height: 75%;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    height: 25%;
+    justify-content: flex-start;
+    align-items: flex-start;
     display: flex;
 }
 
 .contactDetail {
-    width: 100px;
-    height: 100px;
-    margin: 5%;
+    width: 5vw;
+    height: 5vw;
+    margin: 0.5%;
+    max-height: 60px;
+    max-width: 60px;
 }
 
 
 
 .contactInfo h1 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 25%;
+    height: 15%;
     font-size: 4vw;
     font-weight: bold;
     color: #00FFC6;
-    width: 100%;
+    width: 90%;
+    margin-bottom: 4vh;
 }
 
-#facebook {
+.halfPageFill {
+    width: 100%;
+    height: 50%;
+}
+
+.jongVldHulshout {
+    background: url("./assets/Images/jongVldHulshout.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.jongVld {
+    background: url("./assets/Images/jongVld.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.openVld {
+    background: url("./assets/Images/openVldHulshout.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 100%;
+    align-self: flex-start;
+}
+
+
+.facebook {
     background-image: url(./assets/Images/facebookWhite.png);
     background-position: center;
-    background-size: cover
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-
-
-#twitter {
+.twitter {
     background-image: url(./assets/Images/twitterWhite.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#linkedIn {
+.linkedIn {
     background-image: url(./assets/Images/linkedinWhite.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#email {
+.email {
     background-image: url(./assets/Images/emailWhite.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#fourthTileAbout {
-        background-color: #0F1568;
+.fourthTileAbout {
+    background-color:#0F1568;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -548,13 +592,14 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4vh;
+    padding-top: 3vh;
 }
 
 #blogTitles article {
     width: 80%;
+    max-width: 1400px;
     margin: 2vh 0vh;
-    box-shadow:  3px 3px 5px 3px #ccc;
+    box-shadow:  3px 3px 5px 5px #b5b5b5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -563,12 +608,12 @@ nav a:hover {
 
 #blogTitles img {
     width: 100%;
-    height: 20vw;
+    height: 18vw;
     object-fit: cover;
 }
 
 #blogTitles h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     color: #0F1568;
     display: flex;
@@ -611,7 +656,7 @@ nav a:hover {
 #blogTitles a {
     margin-bottom: 2vh;
     border: 1px solid #00FFC6;
-    padding: 0.3vw 1vw;
+    padding: 0.5vw 2vw;
     background: #00FFC6;
     font-weight: bold;
     font-size: 1.2vw;
@@ -629,13 +674,19 @@ nav a:hover {
     background: #FFF;
 }
 
+#blogTitles a:hover {
+    transition: 0.3s;
+    color: #00FFC6;
+    background: #FFF;
+}
+
 #titlesLatestNews {
     width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #0F1568;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     height: 5vw;
 }
 
@@ -731,7 +782,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    margin-top: 5vh;
+    margin-top: 13vh;
 }
 
 #loginContainer {

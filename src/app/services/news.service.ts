@@ -33,7 +33,7 @@ export class NewsService {
       title: post.title,
       intro: post.intro,
       date: post.date,
-      url: "https://firebasestorage.googleapis.com/v0/b/brentsite-ebcd7.appspot.com/o/uploads%2Fblogpost1.jpg?alt=media&token=736fcc7e-5514-472a-8a43-df7e19ed74d4",
+      url: "https://firebasestorage.googleapis.com/v0/b/brentsite-ebcd7.appspot.com/o/uploads%2F_MG_8512.JPG?alt=media&token=c7cb05b0-0f57-4f61-a18b-f7abb01b739c",
       pdf: pdf
     })
   }
