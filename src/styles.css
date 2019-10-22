@@ -607,14 +607,15 @@ nav a:hover {
 
 #blogTitles {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     padding-top: 3vh;
-    background: #00FFC6;
+    background: #FFF;
 }
 
 #blogTitles article {
-    width: 80%;
+    width: 45%;
     max-width: 1200px;
     margin: 2vh 0vh;
     box-shadow:  3px 3px 5px 1px darkslategray;
@@ -803,7 +804,7 @@ nav a:hover {
     justify-content: center;
     align-items: flex-end;
     height: 25vh;
-    background: #00FFC6;
+    background: #FFF;
 }
 
 #loginContainer {
