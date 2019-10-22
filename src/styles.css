@@ -85,13 +85,14 @@ nav {
 
 nav a {
     margin: 0px 50px;
-    font-size: 1.5vw;
+    font-size: 3vh;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'KeepCalm'; 
     color: #0F1568;
     font-weight: bold;
     height: 100%;
     width: 10%;
+    min-width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,13 +150,28 @@ nav a:hover {
     font-size: 4.5vw;
     font-weight: bold;
     color: #00FFC6;
+    margin-bottom: 3vh;
 }
 
 #secondTile article {
-    color: #00FFC6;
-    margin: 5% 10% 0% 10%;
-    font-size: 2.5vw;
+    color: #FFF;
+    margin: 2% 10% 0% 10%;
+    font-size: 1.8vw;
     text-align: center;
+}
+
+#internationalOfficer{
+    color: #0F1568;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00FFC6;
+}
+
+#internationalOfficer h1 {
+    font-size: 5vw;
+    background: #00FFC6;
+    padding: 1%;
 }
 
 #contentTable {
@@ -457,7 +473,7 @@ nav a:hover {
     width: 100%;
     height: 80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column
 }
@@ -487,9 +503,10 @@ nav a:hover {
     height: 15%;
     font-size: 4vw;
     font-weight: bold;
-    color: #00FFC6;
+    color: #FFF;
     width: 90%;
     margin-bottom: 4vh;
+    margin-top: 2vh;
 }
 
 .halfPageFill {
@@ -515,8 +532,8 @@ nav a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     width: 35%;
-    height: 100%;
-    align-self: flex-start;
+    height: 80%;
+    align-self: flex-end;
 }
 
 
@@ -593,17 +610,19 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     padding-top: 3vh;
+    background: #00FFC6;
 }
 
 #blogTitles article {
     width: 80%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 2vh 0vh;
-    box-shadow:  3px 3px 5px 5px #b5b5b5;
+    box-shadow:  3px 3px 5px 1px darkslategray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #FFF
 }
 
 #blogTitles img {
@@ -622,10 +641,11 @@ nav a:hover {
     color: #0F1568;
     text-align: center;
     margin: 1vw;
+    margin-top: 3vh;
 }
 
 #blogTitles h2 {
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
     color: #00FFC6;
@@ -641,6 +661,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: auto;
+    text-align: center;
 }
 
 #blogTitles button {
@@ -655,8 +676,8 @@ nav a:hover {
 
 #blogTitles a {
     margin-bottom: 2vh;
-    border: 1px solid #00FFC6;
-    padding: 0.5vw 2vw;
+    border: 2px solid #00FFC6;
+    padding: 2vh 2vw;
     background: #00FFC6;
     font-weight: bold;
     font-size: 1.2vw;
@@ -780,9 +801,9 @@ nav a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-top: 13vh;
+    align-items: flex-end;
+    height: 25vh;
+    background: #00FFC6;
 }
 
 #loginContainer {
@@ -841,4 +862,41 @@ nav a:hover {
     border: 1px solid #0F1568;
     padding: 0vw 5vw;
     font-size: 1.5vw;
+}
+
+/* Mobile version */
+
+@media only screen and (max-width: 600px){
+    .pageFill{
+        height: 50%;
+    }
+
+    .halfPageFill {
+        height: 25%;
+    }
+
+    #frontImage h1{
+        top: 25%;
+        left: 3%;
+    }
+
+    #frontImage img {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0px;
+        top: 0px;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    #secondTile h1{
+        font-size: 5vw;
+        margin-bottom: 1.5vh;
+    }
+
+    #secondTile article {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
 }
