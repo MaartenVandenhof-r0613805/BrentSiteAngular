@@ -3,4 +3,5 @@ export class post{
     title:string;
     intro:string;
     date:string;
+    pdf:string;
 }
