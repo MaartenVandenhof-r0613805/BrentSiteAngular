@@ -8,11 +8,11 @@
         </div>
     </div>
 </div> -->
-<div id="latestContainer">
+<div id="latestContainer" *ngIf="postArray[postArray.length - 1] != null">
         <div id="titlesLatestNews">
-           <a href="{{ postArray[postArray.length - 1].pdf }}">{{ postArray[postArray.length - 1].title }}</a>
-           <a href="{{ postArray[postArray.length - 2].pdf }}">{{ postArray[postArray.length - 2].title }}</a>
-           <a href="{{ postArray[postArray.length - 3].pdf }}">{{ postArray[postArray.length - 3].title }}</a>
+           <a *ngIf="postArray[postArray.length - 1] != null" href="{{ postArray[postArray.length - 1].pdf }}">{{ postArray[postArray.length - 1].title }}</a>
+           <a *ngIf="postArray[postArray.length - 2] != null" href="{{ postArray[postArray.length - 2].pdf }}">{{ postArray[postArray.length - 2].title }}</a>
+           <a *ngIf="postArray[postArray.length - 3] != null" href="{{ postArray[postArray.length - 3].pdf }}">{{ postArray[postArray.length - 3].title }}</a>
        </div>
 </div>
 <div class="pageFill" id="blogTitles">

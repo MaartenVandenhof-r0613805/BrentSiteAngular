@@ -989,4 +989,41 @@ nav a:hover {
         height: 80%;
         align-self: flex-end;
     }
+
+    /* Nieuws pagina */
+
+    #blogTitles {
+        height: auto;
+        padding-bottom: 10vw;
+    }
+
+    #blogTitles article{
+        width: 90%;
+    }
+
+    #blogTitles h1{
+        font-size: 5vw;
+    }
+
+    #blogTitles h2{
+        font-size: 4vw;
+    }
+
+    #blogTitles h3{
+        font-size: 3vw;
+    }
+
+    #titlesLatestNews {
+        width: 100%;
+        margin: 0px;
+        height: 10vh;
+    }
+
+    #titlesLatestNews a {
+        font-size: 3vw;
+    }
+
+    #latestContainer {
+        height: 20vh;
+    }
 }
