@@ -28,7 +28,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
     HomeComponent,
     AboutComponent,
     AddPostComponent,
-    LoginComponent
+    LoginComponent,
+    BlogpostComponent
   ],
   imports: [
     BrowserModule,
