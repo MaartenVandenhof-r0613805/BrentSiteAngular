@@ -2,10 +2,10 @@
     <div id="loginScreen">
         <h1>Fill in your details</h1>
 
-        <div *ngIf="auth.user$ | async as user; else login">
+        <!-- <div *ngIf="auth.user$ | async as user; else login">
             <p>TESTTESTTESTTEST</p>
             <button (click)="auth.signOut()">Sign Out</button>
-        </div>
+        </div> -->
 
         <label for="title">Email*</label>
         <input type="text" #username placeholder="Username"/> 
