@@ -11,7 +11,7 @@ import { range } from 'rxjs';
 })
 export class AddPostComponent implements OnInit {
 
-  constructor(private newsService: NewsService, private uploadService:UploadService) { }
+  constructor(public newsService: NewsService, private uploadService:UploadService) { }
   submitted: boolean;
   submittedSucces: boolean;
   errorTitle: boolean;
