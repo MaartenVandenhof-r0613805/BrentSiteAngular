@@ -595,6 +595,10 @@ nav a:hover {
     
 }
 
+#sixthTileAbout h1 {
+    color: #0F1568;
+}
+
 #sixthTileAbout .articleAbout {
     height: 45vh;
 }
