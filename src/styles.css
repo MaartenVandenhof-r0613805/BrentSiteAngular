@@ -526,7 +526,7 @@ nav a:hover {
 }
 
 .openVld {
-    background: url("./assets/Images/openVldHulshout.png");
+    background: url("./assets/Images/openVldHulshoutWhite.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 35%;
@@ -1045,4 +1045,12 @@ nav a:hover {
     #latestContainer {
         height: 20vh;
     }
+
+    /* Over mij */
+
+    #secondTileAbout .articleAbout *{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
 }
