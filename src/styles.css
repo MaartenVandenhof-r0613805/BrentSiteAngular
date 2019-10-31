@@ -936,7 +936,7 @@ nav a:hover {
     }
 
     #secondTile {
-        height: 125%;
+        height: auto;
     }
 
     #secondTile h1{
@@ -944,10 +944,18 @@ nav a:hover {
         margin-bottom: 2vh;
     }
 
+    #secondTile h1:first-of-type{
+        margin-top: 3vh;;
+    }
+
     #secondTile article {
         font-size: 2.8vh;
         margin-bottom: 2vw;
         line-height: 25px;
+    }
+
+    #secondTile article:last-of-type {
+        margin-bottom: 5vh;
     }
 
     #internationalOfficer h1 {
@@ -1069,12 +1077,12 @@ nav a:hover {
     }
 
     #secondTileAbout h1 {
-        font-size: 5vw;
+        font-size: 8vw;
         text-align: center;
     }
 
     #secondTileAbout p {
-        font-size: 3vw;
+        font-size: 6vw;
     }
 
     #secondTileAbout .articleAbout {
@@ -1085,6 +1093,112 @@ nav a:hover {
     }
 
     #secondTileAbout {
+        justify-content: flex-end;
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    #sixthTileAbout {
+        justify-content: flex-end;
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    #sixthTileAbout .articleAbout img {
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    #sixthTileAbout .articleAbout div {
+        width: 95%;
+        padding-top: 5%;
+    }
+
+    #sixthTileAbout h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #sixthTileAbout p {
+        font-size: 6vw;
+    }
+
+    #sixthTileAbout .articleAbout {
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    #sixthTileAbout {
+        justify-content: flex-end;
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    #fifthTileAbout .articleAbout img {
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    #fifthTileAbout .articleAbout div {
+        width: 95%;
+        padding-top: 5%;
+    }
+
+    #fifthTileAbout h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #fifthTileAbout p {
+        font-size: 6vw;
+    }
+
+    #fifthTileAbout .articleAbout {
+        height: 100%;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    #fifthTileAbout {
+        justify-content: flex-end;
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+
+    #thirdTileAbout .articleAbout img {
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    #thirdTileAbout .articleAbout div {
+        width: 95%;
+        padding-top: 5%;
+    }
+
+    #thirdTileAbout .articleAbout div h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #thirdTileAbout .articleAbout div p {
+        font-size: 6vw;
+    }
+
+    #thirdTileAbout .articleAbout {
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    #thirdTileAbout {
         justify-content: flex-end;
         height: auto;
         padding-bottom: 8vw;
