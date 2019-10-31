@@ -882,7 +882,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
 
     /* Navbar */
 
@@ -1048,9 +1048,46 @@ nav a:hover {
 
     /* Over mij */
 
-    #secondTileAbout .articleAbout *{
+    #frontImageAbout img{
+        object-position: 71% 50%;
+    }
+
+    #frontImageAbout h1{
+        top: 55%;
+        font-size: 12vw;
+    }
+
+    #secondTileAbout .articleAbout img {
         width: 100%;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    #secondTileAbout .articleAbout div {
+        width: 95%;
+        padding-top: 5%;
+    }
+
+    #secondTileAbout h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #secondTileAbout p {
+        font-size: 3vw;
+    }
+
+    #secondTileAbout .articleAbout {
+        height: 100%;
         flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    #secondTileAbout {
+        justify-content: flex-end;
+        height: auto;
+        padding-bottom: 8vw;
     }
 
 }
