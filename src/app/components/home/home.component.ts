@@ -18,5 +18,4 @@ export class HomeComponent implements OnInit {
             window.scrollTo(0, 0)
         });
     }
-
 }
