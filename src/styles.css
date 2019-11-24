@@ -160,6 +160,24 @@ nav a:hover {
     text-align: center;
 }
 
+#mijnPlan {
+    width: 30%;
+    max-width: 500px;
+    border: 2px solid #fff;
+    height: 8%;
+    margin-top: 5%;
+    background: transparent;
+    color: #FFF;
+    font-family: "KeepCalm";
+    font-size: 1.5em;
+}
+
+#mijnPlan:hover{
+    background: #FFF;
+    transition: 0.5s;
+    color: #0F1568;
+}
+
 #internationalOfficer{
     color: #0F1568;
     display: flex;
@@ -643,7 +661,10 @@ nav a:hover {
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
-    color: #00FFCC;
+    color: #0F1568;
+    border-top: 1px solid #0F1568;
+    border-bottom: 1px solid #0F1568;  
+    padding: 0.5vw;
 }
 
 #blogTitles h3 {
@@ -672,9 +693,9 @@ nav a:hover {
 
 #blogTitles a {
     margin-bottom: 2vh;
-    border: 2px solid #00FFCC;
+    border: 2px solid #0F1568;
     padding: 2vh 2vw;
-    background: #00FFCC;
+    background: #0F1568;
     font-weight: bold;
     font-size: 1.2vw;
     color: #FFF;   
@@ -687,13 +708,13 @@ nav a:hover {
 
 #blogTitles button:hover {
     transition: 0.3s;
-    color: #00FFCC;
+    color: #0F1568;
     background: #FFF;
 }
 
 #blogTitles a:hover {
     transition: 0.3s;
-    color: #00FFCC;
+    color: #0F1568;
     background: #FFF;
 }
 
