@@ -165,11 +165,15 @@ nav a:hover {
     max-width: 500px;
     border: 2px solid #fff;
     height: 8%;
-    margin-top: 5%;
+    margin-top: 5vh;
     background: transparent;
     color: #FFF;
     font-family: "KeepCalm";
     font-size: 1.5em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #mijnPlan:hover{
@@ -957,6 +961,15 @@ nav a:hover {
 
     #secondTile article:last-of-type {
         margin-bottom: 5vh;
+    }
+
+    #mijnPlan {
+        margin-top: 0px;
+        width: 30%;
+        max-width: 500px;
+        height: 8%;
+        min-height: 40px;
+        min-width: 200px
     }
 
     #internationalOfficer h1 {
