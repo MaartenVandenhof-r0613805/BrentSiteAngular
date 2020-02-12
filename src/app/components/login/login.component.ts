@@ -16,12 +16,21 @@ export class LoginComponent implements OnInit {
   // private router: Router,
   // private fb: FormBuilder,
   // private ngZone: NgZone,
-  constructor( public auth: AuthService) { }
+  constructor( public auth: AuthService, private router:Router) { }
 
   //  loginForm = this.fb.group({
   //   email: ['', Validators.required],
   //   password: ['', Validators.required]
   // })
+  loginUser(e){
+    var username = e.email;
+    var pass = e.password;
+    if(username == "brent" && pass == "test"){
+      this.router.navigate(['addPost']);
+    } else {
+      this.router.navigate(['login'])
+    }
+  }
 
   ngOnInit() {
     
