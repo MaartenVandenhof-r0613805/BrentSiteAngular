@@ -890,6 +890,22 @@ nav a:hover {
     font-size: 1.5vw;
 }
 
+#logOut {
+    position: fixed;
+    right: 0px;
+    bottom: 0%;
+    height: 8%;
+    width: 200px;
+    background: #0F1568;
+    color: #FFF;
+    border: none;;
+    font-size: 3vh;
+    font-weight: bold;
+    border-left: 2px solid #FFF;
+    border-top: 2px solid #FFF;
+    display: none;
+}
+
 /* Mobile version */
 
 @media only screen and (max-width: 900px){
@@ -1236,5 +1252,4 @@ nav a:hover {
         height: auto;
         padding-bottom: 8vw;
     }
-
 }

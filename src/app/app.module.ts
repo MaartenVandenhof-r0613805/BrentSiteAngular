@@ -19,6 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 import { BlogpostComponent } from './components/blogpost/blogpost.component';
 import { AuthService } from "./services/auth.service";
 import { AngularFirestore } from '@angular/fire/firestore';
+import { AuthguardGuard } from './authguard.guard';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [NewsService, AuthService, AngularFirestore],
+  providers: [NewsService, AuthService, AngularFirestore, AuthguardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

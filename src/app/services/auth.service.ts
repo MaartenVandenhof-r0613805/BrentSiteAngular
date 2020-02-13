@@ -19,51 +19,66 @@ export class AuthService {
   public loggedIn: boolean;
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) { 
-    this.withMail = true;
-    this.user = afAuth.authState;
-    this.loggedIn = !!sessionStorage.getItem('user');
+    this.loggedIn = false;
+    // this.withMail = true;
+    // this.user = afAuth.authState;
+    // this.loggedIn = !!sessionStorage.getItem('user');
 
-    this.user.subscribe(
-        (user) => {
-          if (user) {
-            this.userDetails = user;
+    // this.user.subscribe(
+    //     (user) => {
+    //       if (user) {
+    //         this.userDetails = user;
 
-            console.log(this.userDetails);
-          } else {
-            this.userDetails = null;
-          }
-        }
-      );
+    //         console.log(this.userDetails);
+    //       } else {
+    //         this.userDetails = null;
+    //       }
+    //     }
+    //   );
   }
 
-  async googleSignin(){
-    const provider = new auth.GoogleAuthProvider();
-    //const googleIdToken = await this.afAuth.auth.signInWithCredential(firebase.auth.GoogleAuthProvider.credential(googleIdToken, googleAccessToken))
-    const credential = await this.afAuth.auth.signInWithPopup(provider);
-    return this.updateUserData(credential.user);
+  setUserLoggedIn(){
+    this.loggedIn = true;
+    document.getElementById("logOut").style.display = "block";
   }
 
-  async mailSignin(email:string, password:string){
-    console.log(email);
+  setUserLoggedOut(){
+    this.loggedIn = false;
+    document.getElementById("logOut").style.display = "none";
+  }
+
+  getUserLoggedIn(){
+    return this.loggedIn;
+  }
+
+  // async googleSignin(){
+  //   const provider = new auth.GoogleAuthProvider();
+  //   //const googleIdToken = await this.afAuth.auth.signInWithCredential(firebase.auth.GoogleAuthProvider.credential(googleIdToken, googleAccessToken))
+  //   const credential = await this.afAuth.auth.signInWithPopup(provider);
+  //   return this.updateUserData(credential.user);
+  // }
+
+  // async mailSignin(email:string, password:string){
+  //   console.log(email);
     
-    const provider = new auth.EmailAuthProvider();
+  //   const provider = new auth.EmailAuthProvider();
     
       
-      this.afAuth.auth.signInWithEmailAndPassword(email, password).catch(function (error) {
-        console.log("testtesttest");
-        console.log(error);
-        this.withMail = false;
-      });
+  //     this.afAuth.auth.signInWithEmailAndPassword(email, password).catch(function (error) {
+  //       console.log("testtesttest");
+  //       console.log(error);
+  //       this.withMail = false;
+  //     });
 
-      if (this.withMail) return this.router.navigate(['/home']);
-  }
+  //     if (this.withMail) return this.router.navigate(['/home']);
+  // }
 
-  async signOut() {
-    await this.afAuth.auth.signOut();
-    return this.router.navigate(['/login']);
-  }
+  // async signOut() {
+  //   await this.afAuth.auth.signOut();
+  //   return this.router.navigate(['/login']);
+  // }
 
-  private updateUserData(user){
+  // private updateUserData(user){
 
-  }
+  // }
 }

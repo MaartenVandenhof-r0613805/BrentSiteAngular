@@ -3,6 +3,7 @@ import { NewsService } from "../../services/news.service";
 import { UploadService } from 'src/app/services/upload.service';
 import { Upload } from 'src/app/services/upload';
 import { range } from 'rxjs';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-add-post',
@@ -11,7 +12,7 @@ import { range } from 'rxjs';
 })
 export class AddPostComponent implements OnInit {
 
-  constructor(public newsService: NewsService, private uploadService:UploadService) { }
+  constructor(public newsService: NewsService, private uploadService:UploadService, private auth:AuthService) { }
   submitted: boolean;
   submittedSucces: boolean;
   errorTitle: boolean;

@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     var username = e.email;
     var pass = e.password;
     if(username == "brent" && pass == "test"){
+      this.auth.setUserLoggedIn();
       this.router.navigate(['addPost']);
     } else {
       this.router.navigate(['login'])
