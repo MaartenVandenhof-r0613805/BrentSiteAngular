@@ -65,7 +65,6 @@ h1 {
 }
 
 nav {
-    height: 8%;
     background-color: #FFF;
     position: fixed;
     z-index: 3;
@@ -79,12 +78,17 @@ nav {
     box-shadow: 0px 0px 8px 2px rgba(46, 46, 46, 0.58);
 }
 
+#hamburgerButton {
+   display: none;     
+}
+
 #homeLink {
     width: 25%;
 }
 
 nav a {
     margin: 0px 50px;
+    padding: 2%;
     font-size: 3vh;
     text-decoration: none;
     font-family: 'KeepCalm'; 
@@ -908,9 +912,14 @@ nav a:hover {
 
 /* Mobile version */
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1100px){
 
     /* Navbar */
+
+    #hamburgerButton {
+        display: block;
+        height: 80px;
+    }
 
     #homeLink {
         width: 30%;
@@ -918,16 +927,20 @@ nav a:hover {
     }
 
     nav {
-        height: 80px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
     }
 
     nav a {
+        display: none;
         margin: 0px;
+        padding: 0px;
         font-size: 1.2em;
         color: #0F1568;
         font-weight: bold;
-        height: 100%;
-        width: 30%;
+        height: 80px;
+        width: 100%;
         min-width: 0px;
         justify-content: space-around;
     }
@@ -980,8 +993,8 @@ nav a:hover {
 
     #secondTile article {
         font-size: 2.8vh;
+        line-height: unset;
         margin-bottom: 2vw;
-        line-height: 30px;
         text-align: center;
         width: 95%;
     }

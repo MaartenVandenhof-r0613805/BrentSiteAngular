@@ -1,6 +1,7 @@
 <nav>
-    <a routerLink="home" id="homeLink">Brent Usewils</a>
-    <a routerLink="about">Over mij</a>
-    <a routerLink="news">Visie</a>
+    <button id="hamburgerButton" (click)="onClick($event)">HamburgerButton</button>
+    <a routerLink="home" id="homeLink" class="routerLink">Brent Usewils</a>
+    <a routerLink="about" class="routerLink">Over mij</a>
+    <a routerLink="news" class="routerLink">Visie</a>
     <!-- <a routerLink="addPost">Add Post</a> -->
 </nav>
