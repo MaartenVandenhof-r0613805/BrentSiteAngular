@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   clicked = false;
-  display = "block";
+  display = "flex";
   onClick($event) {
     console.log("clicked")
       const links = document.getElementsByClassName("routerLink");
@@ -20,8 +20,8 @@ export class HeaderComponent implements OnInit {
         console.log("set display to " + this.display)
       }
 
-      if (this.display == "block" ) this.display = "none";
-      else this.display = "block";
+      if (this.display == "flex" ) this.display = "none";
+      else this.display = "flex";
   }
 
   ngOnInit() {

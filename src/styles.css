@@ -919,17 +919,20 @@ nav a:hover {
     #hamburgerButton {
         display: block;
         height: 80px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        font-family: "KeepCalm";
+        font-weight: bold;
+        color: #0F1568;
+        font-size: 1.2em;
     }
-
-    #homeLink {
-        width: 30%;
-        min-width: 165px;
-    }
-
+    
     nav {
         display: flex;
         flex-direction: column;
-        height: fit-content;
+        justify-content: center;
+        width: 100%;
     }
 
     nav a {
@@ -940,18 +943,11 @@ nav a:hover {
         color: #0F1568;
         font-weight: bold;
         height: 80px;
-        width: 100%;
-        min-width: 0px;
-        justify-content: space-around;
-    }
-
-    nav a:nth-child(2){
-        min-width: 95px;
+        width: 200%;
+        border-top: 1px solid #0F1568;
     }
 
     /* First page */
-
-    
 
     .halfPageFill {
         height: 25%;
