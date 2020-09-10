@@ -629,16 +629,17 @@ nav a:hover {
 
 #blogTitles {
     display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: flex-start;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     padding-top: 3vh;
     background: #FFF;
     height: auto;
+    padding-top: 15vh;
 }
 
 #blogTitles article {
-    width: 45%;
+    width: 43%;
     max-width: 1200px;
     margin: 2vh 2vw;
     box-shadow:  3px 3px 5px 1px darkslategray;
@@ -656,7 +657,7 @@ nav a:hover {
 }
 
 #blogTitles h1 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #0F1568;
     display: flex;
@@ -1062,7 +1063,8 @@ nav a:hover {
 
     #blogTitles {
         height: auto;
-        padding-bottom: 10vw;
+        padding-bottom: 10vh;
+        padding-top: 12vh;
     }
 
     #blogTitles article{

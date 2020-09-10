@@ -20,6 +20,7 @@ import { BlogpostComponent } from './components/blogpost/blogpost.component';
 import { AuthService } from "./services/auth.service";
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AuthguardGuard } from './authguard.guard';
+import { DataServiceService } from './services/data-service.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { AuthguardGuard } from './authguard.guard';
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [NewsService, AuthService, AngularFirestore, AuthguardGuard],
+  providers: [NewsService, AuthService, AngularFirestore, AuthguardGuard, DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
