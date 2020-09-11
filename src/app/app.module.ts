@@ -12,15 +12,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { environment } from "../environments/environment";
-import { NewsService } from "./services/news.service";
-import { AddPostComponent } from './components/add-post/add-post.component';
 import { AngularFireAuthModule } from "@angular/fire/auth";
-import { LoginComponent } from './components/login/login.component';
-import { BlogpostComponent } from './components/blogpost/blogpost.component';
-import { AuthService } from "./services/auth.service";
 import { AngularFirestore } from '@angular/fire/firestore';
-import { AuthguardGuard } from './authguard.guard';
 import { DataServiceService } from './services/data-service.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +24,7 @@ import { DataServiceService } from './services/data-service.service';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    AddPostComponent,
-    LoginComponent,
-    BlogpostComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +36,7 @@ import { DataServiceService } from './services/data-service.service';
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [NewsService, AuthService, AngularFirestore, AuthguardGuard, DataServiceService],
+  providers: [AngularFirestore, DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

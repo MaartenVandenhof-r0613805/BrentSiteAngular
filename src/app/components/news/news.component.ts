@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { NewsService } from "../../services/news.service";
 import { Article } from 'src/app/models/Article';
 import { DataServiceService } from 'src/app/services/data-service.service';
 
@@ -12,7 +11,7 @@ import { DataServiceService } from 'src/app/services/data-service.service';
 export class NewsComponent implements OnInit{
 
 
-  constructor(private newsService:NewsService, private dataService: DataServiceService) { }
+  constructor(private dataService: DataServiceService) { }
   articles: Article[];
   rootURL = "";
   
@@ -25,19 +24,6 @@ export class NewsComponent implements OnInit{
       this.articles = this.articles.sort((a: any, b: any) =>
       new Date(b.date).getTime() - new Date(a.date).getTime()
     );
-
     });
-
-    /*list => {
-    this.postArray = list.map(item => {
-      return {
-        $key: item.key,
-        ...item.payload.val()
-      }
-    })
-    }*/
-
-    
-    //console.log('length = ' + this.postArray.length);
   }
 }
